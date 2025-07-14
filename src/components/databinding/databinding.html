@@ -1,0 +1,22 @@
+<p>databinding works!</p>
+
+<table>
+    <tr>
+        <td>{{courseName}}</td>
+    </tr>
+    <tr>
+        <td><input [type]="inputType" value="{{studentName}}" (change)="onTextChange()"></td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="onButtonClick()">Click Here</button>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" [(ngModel)]="courseName">
+        </td>
+    </tr>
+
+</table>

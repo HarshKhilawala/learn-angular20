@@ -1,0 +1,26 @@
+<p>control-flow works!</p>
+@if(isVisible) {
+    <h1>True</h1>
+} @else {
+    <h1>False</h1>
+}
+
+<button (click)="showVisible()">Show Visible</button>
+<button (click)="hideVisible()">Hide Visible</button>
+<br>
+
+@if(age==18){
+    <p>{{age}} Equal</p>
+} @else if(age>18){
+    <p>{{age}} Greater</p>
+} @else {
+    <p>{{age}} Less</p>
+}
+
+<input type="number" [(ngModel)]="age">
+
+<ul>
+    @for(item of listItems;track $index){
+        <li>{{$index}} - {{item}}</li>
+    }
+</ul>
